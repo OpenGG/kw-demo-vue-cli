@@ -36,7 +36,7 @@ const installDeps = async () => {
         ([d, v]) => `${d}@${v}`
     )
 
-    const proc = await spawn('npx', ['yarn-add-no-save', ...args], {
+    const proc = await spawn('npm', ['i', '--no-save', ...args], {
         stdio: 'inherit',
         env: {
             ...process.env,
