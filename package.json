@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently 'npm run serve' 'npm run test'",
+    "dev:test": "concurrently 'npm run serve' 'npm run test'",
+    "dev": "npm run serve",
     "test": "npm run build:test && npm run test:tree-shaking",
     "test:tree-shaking": "node scripts/test-tree-shaking.mjs /tmp/vite-test",
     "serve": "vue-cli-service serve",
