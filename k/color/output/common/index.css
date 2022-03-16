@@ -1,0 +1,13 @@
+:root {
+    /* commonBase */
+
+    /* colorScene */
+    --color_base_black_1: #ff0000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* colorScene */
+        --color_base_black_1: #00ff00;
+    }
+}
