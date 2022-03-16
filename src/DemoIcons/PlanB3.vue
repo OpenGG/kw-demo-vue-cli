@@ -1,15 +1,13 @@
 <script lang="ts" setup>
 // 第一步：引入图标
-import Icon from '@ks/kw/icon/output/Icon.vue';
-import IconLight from '@ks/kw/icon/output/IconLight.vue';
-import common_base_like_24 from '@ks/kw/icon/output/common/base/common_base_like_24/index';
-import common_base_like_24_png from '@ks/kw/icon/output/common/base/common_base_like_24_png/index';
+import Icon from "@ks/kw/icon/output/Icon.vue";
+import IconLight from "@ks/kw/icon/output/IconLight.vue";
+import common_base_like_24 from "@ks/kw/icon/output/common/base/common_base_like_24/index";
+import common_base_like_24_png from "@ks/kw/icon/output/common/base/common_base_like_24_png/index";
 
 // 第二步（可选）：引入颜色
-import '@ks/kwcolor/color/output/all/index.css';
-import {
-  color_base_black_1,
-} from '@ks/kwcolor/color/output/all/index.v2';
+import "@ks/kwcolor/color/output/all/index.css";
+import { color_base_black_1 } from "@ks/kwcolor/color/output/all/index.v2";
 </script>
 
 <template>
@@ -26,17 +24,9 @@ import {
     color:
       手动设置 color ，会覆盖掉图标本身颜色
   -->
-    <Icon
-      :config="common_base_like_24"
-      class="hello"
-      :size="40"
-    />
+    <Icon :config="common_base_like_24" class="hello" :size="40" />
 
-    <Icon
-      :config="common_base_like_24_png"
-      class="hello"
-      :size="40"
-    />
+    <Icon :config="common_base_like_24_png" class="hello" :size="40" />
 
     <IconLight
       :config="common_base_like_24"
@@ -52,15 +42,9 @@ import {
       class="hello"
     />
 
-    <IconLight
-      :config="common_base_like_24"
-      class="hello1"
-    />
+    <IconLight :config="common_base_like_24" class="hello1" />
 
-    <IconLight
-      :config="common_base_like_24_png"
-      class="hello1"
-    />
+    <IconLight :config="common_base_like_24_png" class="hello1" />
   </div>
 </template>
 

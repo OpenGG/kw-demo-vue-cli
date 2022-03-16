@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import PlanCss from './PlanCss.vue';
-import PlanSass from './PlanSass.vue';
-import PlanLess from './PlanLess.vue';
+import PlanCss from "./PlanCss.vue";
+import PlanSass from "./PlanSass.vue";
+import PlanLess from "./PlanLess.vue";
 </script>
 
 <template>
@@ -12,4 +12,3 @@ import PlanLess from './PlanLess.vue';
     <PlanLess />
   </div>
 </template>
-

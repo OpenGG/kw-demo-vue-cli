@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import { IAnchor } from '../types';
+import { IAnchor } from "../types";
 
 const props = defineProps<{
-  anchors: IAnchor[],
-  active: string
-}>()
+  anchors: IAnchor[];
+  active: string;
+}>();
 
 defineEmits<{
-  (e: 'change', id: string): void
-}>()
+  (e: "change", id: string): void;
+}>();
 </script>
 
 <template>
@@ -18,7 +18,7 @@ defineEmits<{
       :key="anchor.id"
       class="nav-tab"
       :class="{
-        'nav-tab-active': active === anchor.id
+        'nav-tab-active': active === anchor.id,
       }"
       @click="$emit('change', anchor.id)"
     >
@@ -26,7 +26,6 @@ defineEmits<{
     </div>
   </div>
 </template>
-
 
 <style scoped>
 .nav {
@@ -46,4 +45,5 @@ defineEmits<{
 .nav-tab-active {
   border-color: #099;
 }
-</style>>
+</style>
+>

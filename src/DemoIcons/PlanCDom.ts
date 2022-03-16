@@ -1,8 +1,8 @@
 // 引入图标
-import '@ks/kw/icon/output/all/iconfont.css';
+import "@ks/kw/icon/output/all/iconfont.css";
 
 export default (parent: HTMLElement) => {
-  const div = document.createElement('div');
+  const div = document.createElement("div");
 
   div.innerHTML = `
 <style>

@@ -1,19 +1,18 @@
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue';
-import PlanA3 from './PlanA3.vue';
-import PlanB3 from './PlanB3.vue';
-import PlanC3 from './PlanC3.vue';
-import PlanCDom from './PlanCDom';
+import { onMounted, ref } from "vue";
+import PlanA3 from "./PlanA3.vue";
+import PlanB3 from "./PlanB3.vue";
+import PlanC3 from "./PlanC3.vue";
+import PlanCDom from "./PlanCDom";
 
-const refDom = ref<HTMLDivElement>()
+const refDom = ref<HTMLDivElement>();
 
 onMounted(() => {
-  const dom = refDom.value
+  const dom = refDom.value;
   if (dom) {
-
     PlanCDom(dom);
   }
-})
+});
 </script>
 
 <template>
